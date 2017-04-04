@@ -28,10 +28,10 @@ gulp.task('views', function buildHTML(done) {
  
 gulp.task('scss', function (done) {
   return gulp.src('./scss/**/*.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass({
       outputStyle: 'expanded'
   }).on('error', sass.logError))
-    .pipe(sourcemaps.init())
     .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
