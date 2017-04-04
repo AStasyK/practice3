@@ -1,0 +1,109 @@
+.program {
+  background: #fafafa;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .text-heading {
+    margin-bottom: 40px;
+    margin-left: 20%;
+  }
+  .program-download {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 80px;
+    p {
+      margin-bottom: 20px;
+      line-height: 1.48;
+    }
+    ul > li {
+      padding-bottom: 10px;
+      line-height: 1.48;
+    }
+    .btn {
+      margin-top: 20px;
+    }
+  }
+  .hero-img {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  }
+  .program-list {
+    font-size: 14px;
+    margin: 20px 0 0 0;
+    list-style: none;
+    position: relative;
+    padding-left: 60px;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0.4em;
+      left: 18px;
+      height: calc(100% - 10px);
+      width: 2px;
+      background: #d7e4ed;
+    }
+    > li {
+      font-weight: bold;
+      position: relative;
+      margin-bottom: 20px;
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        border: 2px solid #fafafa;
+        background: #ffaf00;
+        position: absolute;
+        border-radius: 50%;
+        left: -48px;
+        top: 0.4em;
+      }
+      > {
+        ul.themes {
+          display: none;
+          margin-top: 30px;
+          margin-bottom: 30px;
+          padding-left: 20px;
+          list-style-type: disc;
+          list-style-position: outside;
+          list-style-image: none;
+          > li {
+            font-weight: normal;
+            margin-bottom: 5px;
+          }
+        }
+        div.themes {
+          display: none;
+          font-weight: normal;
+          margin-top: 30px;
+          margin-bottom: 30px;
+          padding-left: 20px;
+          > .notice {
+            border: 3px solid #0faaff;
+            padding: 10px 15px;
+            background: #fff;
+            border-radius: 10px;
+            margin-top: 20px;
+          }
+        }
+      }
+      &:hover .lesson {
+        color: #ffaf00;
+        cursor: pointer;
+      }
+      &:last-child:after {
+        content: "";
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        border: 2px solid #fafafa;
+        background: #0faaff;
+        position: absolute;
+        border-radius: 50%;
+        left: -48px;
+        bottom: 0;
+      }
+    }
+  }
+}

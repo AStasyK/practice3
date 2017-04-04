@@ -1,0 +1,132 @@
+.slider {
+  min-height: 650px;
+  background-image: -webkit-linear-gradient(bottom, transparent, rgba(0, 0, 0, 0.3)), url("http://terp10.spbstu.ru/img/slide1.jpg");
+  background-image: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.3)), url("http://terp10.spbstu.ru/img/slide1.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  z-index: 1;
+  z-index: 100;
+  &:after {
+    background: #fff;
+    content: '';
+    display: block;
+    height: 10%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden;
+    bottom: 0;
+    -webkit-transform: skewY(-1.5deg);
+    transform: skewY(-1.5deg);
+    -webkit-transform-origin: 100%;
+    transform-origin: 100%;
+  }
+  .slider-heading {
+    font-weight: bold;
+    font-size: 2.2em;
+    line-height: 1.48;
+    color: #fff;
+    margin: 10% 0;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  }
+  .dates {
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  }
+  .scroll-arrow {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -50px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    background: #ffaf00;
+    border-radius: 50%;
+    text-align: center;
+  }
+  .appl-form {
+    font-size: 0.875em;
+    float: right;
+    text-align: center;
+    max-width: 350px;
+    margin-top: 25px;
+    padding: 30px 30px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    .form-group {
+      margin-bottom: 20px;
+      &::after {
+        clear: both;
+        content: "";
+        display: table;
+      }
+    }
+    .appl-popover {
+      float: left;
+      margin-top: 17px;
+      display: inline-block;
+      width: 2em;
+      height: 2em;
+      line-height: 2em;
+      text-align: center;
+      border-radius: 50%;
+      background: #0faaff;
+      color: #fff;
+      &:hover {
+        box-shadow: 0px 0px 20px 0px rgba(15, 170, 255, 0.6);
+      }
+      .popover {
+        border: 0;
+      }
+    }
+    label {
+      display: block;
+      text-align: left;
+      color: #333;
+      letter-spacing: 1px;
+      font-size: 0.9em;
+    }
+    .appl-check {
+      font-weight: normal;
+      float: left;
+      margin-right: 5px;
+      font-size: 0.8em;
+    }
+    input[type="text"] {
+      padding: 0 10px;
+      border-radius: 30px;
+      line-height: 30px;
+      width: 100%;
+      border: 2px solid #eaeaea;
+      &:focus {
+        border-color: #0faaff;
+      }
+      &.error {
+        border: 2px solid #EE5152;
+      }
+    }
+    .code {
+      padding: 0;
+    }
+    .star {
+      color: red;
+      margin-left: 2px;
+    }
+    .info-desc {
+      text-align: left;
+      font-size: 0.9em;
+      line-height: 1.48;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+    }
+  }
+}

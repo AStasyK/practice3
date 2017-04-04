@@ -1,0 +1,76 @@
+// Shrink
+// ----
+
+// ### Shrink In
+
+@mixin shrink-in($vendor: "") {
+  0% {
+    opacity: 1;
+    #{$vendor}transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    #{$vendor}transform: scale(0.3);
+  }
+}
+
+@keyframes shrink-in {
+  @include shrink-in;
+}
+
+
+@-webkit-keyframes shrink-in {
+  @include shrink-in(-webkit-);
+}
+
+
+@-o-keyframes shrink-in {
+  @include shrink-in(-o-);
+}
+
+
+@-moz-keyframes shrink-in {
+  @include shrink-in(-moz-);
+}
+
+
+.shrink-in {
+  @include animation-name(shrink-in);
+}
+
+// ### Shrink Out
+
+@mixin shrink-out($vendor: "") {
+  0% {
+    opacity: 0;
+    #{$vendor}transform: scale(2);
+  }
+  100% {
+    opacity: 1;
+    #{$vendor}transform: scale(1);
+  }
+}
+
+@keyframes shrink-out {
+  @include shrink-out;
+}
+
+
+@-webkit-keyframes shrink-out {
+  @include shrink-out(-webkit-);
+}
+
+
+@-o-keyframes shrink-out {
+  @include shrink-out(-o-);
+}
+
+
+@-moz-keyframes shrink-out {
+  @include shrink-out(-moz-);
+}
+
+
+.shrink-out {
+  @include animation-name(shrink-out);
+}

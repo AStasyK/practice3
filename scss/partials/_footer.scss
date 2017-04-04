@@ -1,0 +1,40 @@
+.main-footer {
+  background: #363636;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  .contacts {
+    address, a {
+      display: inline-block;
+      margin: 5px;
+      color: #ccc;
+      text-decoration: none;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+    address > i, a > i {
+      color: #ffaf00;
+    }
+    address:hover, a:hover {
+      color: white;
+    }
+  }
+  .socials {
+    margin-top: 20px;
+    text-align: center;
+    a {
+      margin: 0 5px;
+      border-radius: 50%;
+      display: inline-block;
+      background: #ffaf00;
+      color: #363636;
+      width: 2em;
+      height: 2em;
+      line-height: 2em;
+      text-align: center;
+      text-decoration: none;
+      &:hover {
+        background: #fff;
+      }
+    }
+  }
+}

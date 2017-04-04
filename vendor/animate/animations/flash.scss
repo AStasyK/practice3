@@ -1,0 +1,38 @@
+// Flash
+// -----
+
+@mixin flash($vendor: "") {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  @include flash;
+}
+
+
+@-webkit-keyframes flash {
+  @include flash(-webkit-);
+}
+
+
+@-o-keyframes flash {
+  @include flash(-o-);
+}
+
+
+@-moz-keyframes flash {
+  @include flash(-moz-);
+}
+
+
+.flash {
+  @include animation-name(flash);
+}

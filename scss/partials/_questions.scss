@@ -1,0 +1,38 @@
+.questions {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .text-heading {
+    margin-left: 20%;
+    margin-bottom: 40px;
+  }
+  .panel {
+    border-radius: 5px;
+    box-shadow: 0px 0px 125px 0px rgba(141, 148, 169, 0.25);
+    margin-bottom: 30px;
+    .panel-heading .panel-title {
+      font-weight: bold;
+      a {
+        display: inline-block;
+        text-decoration: none;
+        &:before {
+          display: inline-block;
+          content: "-";
+          background: #0faaff;
+          border-radius: 50%;
+          margin-right: 10px;
+          color: #fff;
+          width: 32px;
+          height: 32px;
+          line-height: 30px;
+          text-align: center;
+        }
+        &.collapsed:before {
+          content: "+";
+        }
+      }
+    }
+    .panel-body {
+      margin-left: 45px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+// Shake
+// -----
+
+@mixin shake($vendor: "") {
+  0%,
+  100% {
+    #{$vendor}transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    #{$vendor}transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    #{$vendor}transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  @include shake;
+}
+
+
+@-webkit-keyframes shake {
+  @include shake(-webkit-);
+}
+
+
+@-o-keyframes shake {
+  @include shake(-o-);
+}
+
+
+@-moz-keyframes shake {
+  @include shake(-moz-);
+}
+
+
+.shake {
+  @include animation-name(shake);
+}

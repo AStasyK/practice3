@@ -1,4 +1,218 @@
+@import '../vendor/normalize/normalize';
 @import '../vendor/bootstrap-sass/stylesheets/bootstrap';
 @import '../vendor/font-awesome/scss/font-awesome';
+@import '../vendor/animate/animate';
 @import 'partials/variables';
 //@import 'partials/mixins';
+@import 'partials/header';
+@import 'partials/footer';
+@import 'partials/owl';
+@import 'partials/prices';
+@import 'partials/icheck';
+@import 'partials/slider';
+@import 'partials/testimonials';
+@import 'partials/program';
+@import 'partials/questions';
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.sr-only-focusable {
+  &:active, &:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+  }
+}
+
+.accomodation {
+  margin-top: 20px;
+  border: 3px solid #ffaf00;
+  padding: 25px;
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  p {
+    margin: 5px 0;
+  }
+}
+
+body {
+  background: #fafafa;
+  line-height: 1.48;
+  font-size: 16px;
+}
+
+textarea:focus {
+  outline: none !important;
+}
+
+input {
+  &:focus {
+    outline: none !important;
+  }
+  &[type="text"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+}
+
+.main-page {
+  overflow: hidden;
+}
+
+.btn.btn-ui {
+  background: #0faaff;
+  outline: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  &:hover {
+    box-shadow: 0px 0px 20px 0px rgba(15, 170, 255, 0.6);
+  }
+}
+
+.appl-form .btn.btn-ui {
+  font-size: 0.8em;
+}
+
+.pads {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.about {
+  background: #fff;
+  padding-bottom: 60px;
+  padding-top: 40px;
+  .hero-img {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.panel-block {
+  padding: 20px 40px;
+  p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+}
+
+.text-heading {
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  &:after {
+    content: "";
+    display: block;
+    background: #0faaff;
+    height: 4px;
+    margin-top: 10px;
+    width: 40px;
+  }
+}
+
+
+
+.sap-bg {
+  background: url("http://terp10.spbstu.ru/img/sap_bg.svg") left center no-repeat;
+  background-size: cover;
+}
+
+.foreign-students {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  .info-panel {
+    padding: 10px 40px;
+    margin: 20px;
+  }
+  .hero-img {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  }
+  .btn.btn-ui {
+    margin-top: 20px;
+  }
+}
+
+.rect-bg {
+  background: url("http://terp10.spbstu.ru/img/rect_bg.svg") left center no-repeat;
+  background-size: cover;
+}
+
+.registration {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 130px;
+  background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.55) 100%), url("http://terp10.spbstu.ru/img/srgb.jpg");
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.55) 100%), url("http://terp10.spbstu.ru/img/srgb.jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.55) 100%), url("http://terp10.spbstu.ru/img/srgb.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  .call-to-action {
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.8em;
+    text-align: right;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  }
+}
+
+#map {
+  height: 400px;
+  margin: 25px 0 0;
+}
+
+.appl-label {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 996px) {
+  .slider .scroll-arrow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .slider {
+    .dates {
+      text-align: center;
+    }
+    .slider-heading {
+      font-size: 1.8em;
+      text-align: center;
+    }
+  }
+  .registration .call-to-action {
+    text-align: center;
+  }
+  .testimonials .testimonial-item .person .desc {
+    text-align: left;
+    p {
+      text-align: left;
+    }
+  }
+}

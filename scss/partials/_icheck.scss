@@ -1,0 +1,479 @@
+.icheckbox_flat, .iradio_flat {
+  display: inline-block;
+  *display: inline;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  background: url(http://terp10.spbstu.ru/img/flat/flat.png) no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.icheckbox_flat {
+  background-position: 0 0;
+  &.checked {
+    background-position: -22px 0;
+  }
+  &.disabled {
+    background-position: -44px 0;
+    cursor: default;
+  }
+  &.checked.disabled {
+    background-position: -66px 0;
+  }
+}
+
+.iradio_flat {
+  background-position: -88px 0;
+  &.checked {
+    background-position: -110px 0;
+  }
+  &.disabled {
+    background-position: -132px 0;
+    cursor: default;
+  }
+  &.checked.disabled {
+    background-position: -154px 0;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .icheckbox_flat, .iradio_flat {
+    background-image: url(http://terp10.spbstu.ru/img/flat/flat@2x.png);
+    background-size: 176px 22px;
+  }
+}
+
+.icheckbox_flat-red, .iradio_flat-red {
+  display: inline-block;
+  *display: inline;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  background: url(http://terp10.spbstu.ru/img/flat/red.png) no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.icheckbox_flat-red {
+  background-position: 0 0;
+  &.checked {
+    background-position: -22px 0;
+  }
+  &.disabled {
+    background-position: -44px 0;
+    cursor: default;
+  }
+  &.checked.disabled {
+    background-position: -66px 0;
+  }
+}
+
+.iradio_flat-red {
+  background-position: -88px 0;
+  &.checked {
+    background-position: -110px 0;
+  }
+  &.disabled {
+    background-position: -132px 0;
+    cursor: default;
+  }
+  &.checked.disabled {
+    background-position: -154px 0;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .icheckbox_flat-red, .iradio_flat-red {
+    background-image: url(http://terp10.spbstu.ru/img/flat/red@2x.png);
+    background-size: 176px 22px;
+  }
+}
+
+.icheckbox_flat-green, .iradio_flat-green {
+  display: inline-block;
+  *display: inline;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  background: url(http://terp10.spbstu.ru/img/flat/green.png) no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.icheckbox_flat-green {
+  background-position: 0 0;
+  &.checked {
+    background-position: -22px 0;
+  }
+  &.disabled {
+    background-position: -44px 0;
+    cursor: default;
+  }
+  &.checked.disabled {
+    background-position: -66px 0;
+  }
+}
+
+.iradio_flat-green {
+  background-position: -88px 0;
+  &.checked {
+    background-position: -110px 0;
+  }
+  &.disabled {
+    background-position: -132px 0;
+    cursor: default;
+  }
+  &.checked.disabled {
+    background-position: -154px 0;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .icheckbox_flat-green, .iradio_flat-green {
+    background-image: url(http://terp10.spbstu.ru/img/flat/green@2x.png);
+    background-size: 176px 22px;
+  }
+}
+
+.icheckbox_flat-blue, .iradio_flat-blue {
+  display: inline-block;
+  *display: inline;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  background: url(http://terp10.spbstu.ru/img/flat/blue.png) no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.icheckbox_flat-blue {
+  background-position: 0 0;
+  &.checked {
+    background-position: -22px 0;
+  }
+  &.disabled {
+    background-position: -44px 0;
+    cursor: default;
+  }
+  &.checked.disabled {
+    background-position: -66px 0;
+  }
+}
+
+.iradio_flat-blue {
+  background-position: -88px 0;
+  &.checked {
+    background-position: -110px 0;
+  }
+  &.disabled {
+    background-position: -132px 0;
+    cursor: default;
+  }
+  &.checked.disabled {
+    background-position: -154px 0;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .icheckbox_flat-blue, .iradio_flat-blue {
+    background-image: url(http://terp10.spbstu.ru/img/flat/blue@2x.png);
+    background-size: 176px 22px;
+  }
+}
+
+.icheckbox_flat-aero, .iradio_flat-aero {
+  display: inline-block;
+  *display: inline;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  background: url(http://terp10.spbstu.ru/img/flat/aero.png) no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.icheckbox_flat-aero {
+  background-position: 0 0;
+  &.checked {
+    background-position: -22px 0;
+  }
+  &.disabled {
+    background-position: -44px 0;
+    cursor: default;
+  }
+  &.checked.disabled {
+    background-position: -66px 0;
+  }
+}
+
+.iradio_flat-aero {
+  background-position: -88px 0;
+  &.checked {
+    background-position: -110px 0;
+  }
+  &.disabled {
+    background-position: -132px 0;
+    cursor: default;
+  }
+  &.checked.disabled {
+    background-position: -154px 0;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .icheckbox_flat-aero, .iradio_flat-aero {
+    background-image: url(http://terp10.spbstu.ru/img/flat/aero@2x.png);
+    background-size: 176px 22px;
+  }
+}
+
+.icheckbox_flat-grey, .iradio_flat-grey {
+  display: inline-block;
+  *display: inline;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  background: url(http://terp10.spbstu.ru/img/flat/grey.png) no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.icheckbox_flat-grey {
+  background-position: 0 0;
+  &.checked {
+    background-position: -22px 0;
+  }
+  &.disabled {
+    background-position: -44px 0;
+    cursor: default;
+  }
+  &.checked.disabled {
+    background-position: -66px 0;
+  }
+}
+
+.iradio_flat-grey {
+  background-position: -88px 0;
+  &.checked {
+    background-position: -110px 0;
+  }
+  &.disabled {
+    background-position: -132px 0;
+    cursor: default;
+  }
+  &.checked.disabled {
+    background-position: -154px 0;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .icheckbox_flat-grey, .iradio_flat-grey {
+    background-image: url(http://terp10.spbstu.ru/img/flat/grey@2x.png);
+    background-size: 176px 22px;
+  }
+}
+
+.icheckbox_flat-orange, .iradio_flat-orange {
+  display: inline-block;
+  *display: inline;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  background: url(http://terp10.spbstu.ru/img/flat/orange.png) no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.icheckbox_flat-orange {
+  background-position: 0 0;
+  &.checked {
+    background-position: -22px 0;
+  }
+  &.disabled {
+    background-position: -44px 0;
+    cursor: default;
+  }
+  &.checked.disabled {
+    background-position: -66px 0;
+  }
+}
+
+.iradio_flat-orange {
+  background-position: -88px 0;
+  &.checked {
+    background-position: -110px 0;
+  }
+  &.disabled {
+    background-position: -132px 0;
+    cursor: default;
+  }
+  &.checked.disabled {
+    background-position: -154px 0;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .icheckbox_flat-orange, .iradio_flat-orange {
+    background-image: url(http://terp10.spbstu.ru/img/flat/orange@2x.png);
+    background-size: 176px 22px;
+  }
+}
+
+.icheckbox_flat-yellow, .iradio_flat-yellow {
+  display: inline-block;
+  *display: inline;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  background: url(http://terp10.spbstu.ru/img/flat/yellow.png) no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.icheckbox_flat-yellow {
+  background-position: 0 0;
+  &.checked {
+    background-position: -22px 0;
+  }
+  &.disabled {
+    background-position: -44px 0;
+    cursor: default;
+  }
+  &.checked.disabled {
+    background-position: -66px 0;
+  }
+}
+
+.iradio_flat-yellow {
+  background-position: -88px 0;
+  &.checked {
+    background-position: -110px 0;
+  }
+  &.disabled {
+    background-position: -132px 0;
+    cursor: default;
+  }
+  &.checked.disabled {
+    background-position: -154px 0;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .icheckbox_flat-yellow, .iradio_flat-yellow {
+    background-image: url(http://terp10.spbstu.ru/img/flat/yellow@2x.png);
+    background-size: 176px 22px;
+  }
+}
+
+.icheckbox_flat-pink, .iradio_flat-pink {
+  display: inline-block;
+  *display: inline;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  background: url(http://terp10.spbstu.ru/img/flat/pink.png) no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.icheckbox_flat-pink {
+  background-position: 0 0;
+  &.checked {
+    background-position: -22px 0;
+  }
+  &.disabled {
+    background-position: -44px 0;
+    cursor: default;
+  }
+  &.checked.disabled {
+    background-position: -66px 0;
+  }
+}
+
+.iradio_flat-pink {
+  background-position: -88px 0;
+  &.checked {
+    background-position: -110px 0;
+  }
+  &.disabled {
+    background-position: -132px 0;
+    cursor: default;
+  }
+  &.checked.disabled {
+    background-position: -154px 0;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .icheckbox_flat-pink, .iradio_flat-pink {
+    background-image: url(http://terp10.spbstu.ru/img/flat/pink@2x.png);
+    background-size: 176px 22px;
+  }
+}
+
+.icheckbox_flat-purple, .iradio_flat-purple {
+  display: inline-block;
+  *display: inline;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  background: url(http://terp10.spbstu.ru/img/flat/purple.png) no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.icheckbox_flat-purple {
+  background-position: 0 0;
+  &.checked {
+    background-position: -22px 0;
+  }
+  &.disabled {
+    background-position: -44px 0;
+    cursor: default;
+  }
+  &.checked.disabled {
+    background-position: -66px 0;
+  }
+}
+
+.iradio_flat-purple {
+  background-position: -88px 0;
+  &.checked {
+    background-position: -110px 0;
+  }
+  &.disabled {
+    background-position: -132px 0;
+    cursor: default;
+  }
+  &.checked.disabled {
+    background-position: -154px 0;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
+  .icheckbox_flat-purple, .iradio_flat-purple {
+    background-image: url(http://terp10.spbstu.ru/img/flat/purple@2x.png);
+    background-size: 176px 22px;
+  }
+}

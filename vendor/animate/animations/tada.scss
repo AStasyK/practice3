@@ -1,0 +1,50 @@
+// Tada
+// ----
+
+@mixin tada($vendor: "") {
+  0% {
+    #{$vendor}transform: scale(1);
+  }
+  10%,
+  20% {
+    #{$vendor}transform: scale(0.9) rotate(-3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    #{$vendor}transform: scale(1.1) rotate(3deg);
+  }
+  40%,
+  60%,
+  80% {
+    #{$vendor}transform: scale(1.1) rotate(-3deg);
+  }
+  100% {
+    #{$vendor}transform: scale(1) rotate(0);
+  }
+}
+
+@keyframes tada {
+  @include tada;
+}
+
+
+@-webkit-keyframes tada {
+  @include tada(-webkit-);
+}
+
+
+@-o-keyframes tada {
+  @include tada(-o-);
+}
+
+
+@-moz-keyframes tada {
+  @include tada(-moz-);
+}
+
+
+.tada {
+  @include animation-name(tada);
+}

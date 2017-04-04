@@ -1,0 +1,140 @@
+// Fold
+// ----
+
+// ### Fold In
+
+@mixin fold-in($vendor: "", $max-height: 1000px) {
+  0% {
+    max-height: 0px;
+  }
+  100% {
+    max-height: $max-height;
+  }
+}
+
+@keyframes fold-in {
+  @include fold-in;
+}
+
+
+@-webkit-keyframes fold-in {
+  @include fold-in(-webkit-);
+}
+
+
+@-o-keyframes fold-in {
+  @include fold-in(-o-);
+}
+
+
+@-moz-keyframes fold-in {
+  @include fold-in(-moz-);
+}
+
+
+.fold-in {
+  overflow: hidden;
+  @include animation-name(fold-in);
+}
+
+.animated.fold-in {
+  @include animation-duration(1.2s);
+}
+
+@keyframes fold-small-in {
+  @include fold-in("", 500px);
+}
+
+
+@-webkit-keyframes fold-small-in {
+  @include fold-in(-webkit-, 500px);
+}
+
+
+@-o-keyframes fold-small-in {
+  @include fold-in(-o-, 500px);
+}
+
+
+@-moz-keyframes fold-small-in {
+  @include fold-in(-moz-, 500px);
+}
+
+
+.fold-small-in {
+  overflow: hidden;
+  @include animation-name(fold-small-out);
+}
+
+.animated.fold-small-in {
+  @include animation-duration(1s);
+}
+
+// ### Fold Out
+
+@mixin fold-out($vendor: "", $max-height: 1000px) {
+  0% {
+    max-height: $max-height;
+  }
+  99% {
+    max-height: 0px;
+  }
+}
+
+@keyframes fold-out {
+  @include fold-out;
+}
+
+
+@-webkit-keyframes fold-out {
+  @include fold-out(-webkit-);
+}
+
+
+@-o-keyframes fold-out {
+  @include fold-out(-o-);
+}
+
+
+@-moz-keyframes fold-out {
+  @include fold-out(-moz-);
+}
+
+
+.fold-out {
+  overflow: hidden;
+  @include animation-name(fold-out);
+}
+
+.animated.fold-out {
+  @include animation-duration(1.2s);
+}
+
+@keyframes fold-small-out {
+  @include fold-in("", 500px);
+}
+
+
+@-webkit-keyframes fold-small-out {
+  @include fold-in(-webkit-, 500px);
+}
+
+
+@-o-keyframes fold-small-out {
+  @include fold-in(-o-, 500px);
+}
+
+
+@-moz-keyframes fold-small-out {
+  @include fold-in(-moz-, 500px);
+}
+
+
+.fold-small-out {
+  overflow: hidden;
+  @include animation-name(fold-small-out);
+}
+
+.animated.fold-small-out {
+  @include animation-duration(1s);
+}

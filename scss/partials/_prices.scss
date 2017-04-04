@@ -1,0 +1,192 @@
+.prices {
+  .pr-menu ul, .descript ul {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  background: white;
+  margin: 20px 0;
+  padding-top: 1px;
+  border-radius: 10px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  .add-info {
+    padding: 30px 7%;
+    font-size: 1.1em;
+  }
+  .pr-menu {
+    background: #eaeaea;
+    &::after {
+      clear: both;
+      content: "";
+      display: table;
+    }
+    ul {
+      padding: 0 10%;
+      text-align: center;
+      &::after {
+        clear: both;
+        content: "";
+        display: table;
+      }
+      li {
+        float: left;
+        cursor: pointer;
+        padding: 10px 0;
+        width: 50%;
+        text-align: center;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.27);
+        font-weight: bold;
+        position: relative;
+        margin-bottom: -3px;
+        &::after {
+          clear: both;
+          content: "";
+          display: table;
+        }
+        .sect {
+          display: inline-block;
+          margin-bottom: 5px;
+          &::after {
+            clear: both;
+            content: "";
+            display: table;
+          }
+          i {
+            font-size: 24px;
+            float: left;
+          }
+          span {
+            float: left;
+            padding-top: 6px;
+            padding-left: 4px;
+          }
+        }
+        &.current {
+          color: #000;
+          &:after {
+            content: "";
+            display: block;
+            width: 23px;
+            height: 9px;
+            background: url("http://terp10.spbstu.ru/img/angle.png");
+            position: absolute;
+            bottom: 1px;
+            left: 50%;
+            margin-left: -11px;
+          }
+        }
+      }
+    }
+  }
+  .desc .box {
+    display: none;
+    padding: 10px 0 10px;
+    text-align: center;
+    &::after {
+      clear: both;
+      content: "";
+      display: table;
+    }
+    .ttl {
+      margin-top: 15px;
+      text-transform: uppercase;
+      color: #fafafa;
+      font-weight: bold;
+    }
+    .price-val {
+      font-weight: bold;
+      margin: 10px;
+      font-size: 36px;
+      color: rgba(0, 0, 0, 0.75);
+      i {
+        font-size: .6666666666666667em;
+        font-family: "FontAwesome";
+        padding-left: 10px;
+      }
+    }
+    &.current {
+      display: block;
+    }
+  }
+  .descript {
+    padding: 0px 25px 25px 25px;
+    font-size: 18px;
+    &::after {
+      clear: both;
+      content: "";
+      display: table;
+    }
+    .title {
+      text-align: center;
+      font-size: 0.8em;
+      font-weight: bold;
+      padding: 10px 5px;
+    }
+    ul {
+      width: 50%;
+      float: left;
+      li {
+        padding: 3px 0;
+      }
+    }
+    .info {
+      font-size: 0.9em;
+      margin: 20px;
+      line-height: 1.48em;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .prices .pr-menu ul li.current:after {
+    bottom: 1px;
+  }
+}
+
+@media (min-width: 768px) {
+  .prices .desc .box .price-val {
+    font-size: 48px;
+  }
+}
+
+.price {
+  position: relative;
+  z-index: 1;
+  background: #ffaf00 url("http://terp10.spbstu.ru/img/price_bg.svg") center center no-repeat;
+  background-size: contain;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &:after {
+    background: #ffaf00;
+    content: '';
+    display: block;
+    height: 10%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden;
+    bottom: 0;
+    -webkit-transform: skewY(-1.5deg);
+    transform: skewY(-1.5deg);
+    -webkit-transform-origin: 100%;
+    transform-origin: 100%;
+  }
+  .text-heading {
+    color: #fff;
+    margin-left: 20%;
+    &:after {
+      background: #fff;
+    }
+  }
+  .price-block {
+    border-radius: 5px;
+    background: #fff;
+    padding: 40px 30px;
+    p {
+      margin-bottom: 40px;
+    }
+  }
+}
