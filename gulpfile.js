@@ -28,15 +28,15 @@ gulp.task('views', function buildHTML(done) {
  
 gulp.task('scss', function (done) {
   return gulp.src('./scss/**/*.scss')
-    .pipe(sass({
+    .pipe(sourcemaps.init({largeFile: true}))
+	.pipe(sass({
       outputStyle: 'expanded'
-  }).on('error', sass.logError))
-    .pipe(sourcemaps.init())
+	}).on('error', sass.logError))
     .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
-        }))
-    .pipe(sourcemaps.write())
+    }))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./dist/css'));
     done();
     });
