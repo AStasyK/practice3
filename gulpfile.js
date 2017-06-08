@@ -28,7 +28,7 @@ gulp.task('views', function buildHTML(done) {
  
 gulp.task('scss', function (done) {
   return gulp.src('./scss/**/*.scss')
-    .pipe(sourcemaps.init({largeFile: true}))
+    .pipe(sourcemaps.init())
 	.pipe(sass({
       outputStyle: 'expanded'
 	}).on('error', sass.logError))
